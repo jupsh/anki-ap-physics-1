@@ -17,6 +17,43 @@ then in Anki choose **File → Import**.
   mode. Colours: forces red, velocity blue, acceleration green, displacement purple,
   momentum/rotation orange.
 
+<table>
+  <tr><th scope="col" colspan="2">Basic, with a diagram on the front</th></tr>
+  <tr><th scope="col">Front</th><th scope="col">Back</th></tr>
+  <tr>
+    <td><img src="doc/diagram-question-front.png" width="380"></td>
+    <td><img src="doc/diagram-question-back.png" width="380"></td>
+  </tr>
+</table>
+
+<table>
+  <tr><th scope="col" colspan="2">Basic, with a diagram on the back</th></tr>
+  <tr><th scope="col">Front</th><th scope="col">Back</th></tr>
+  <tr>
+    <td><img src="doc/free-body-front.png" width="380"></td>
+    <td><img src="doc/free-body-back.png" width="380"></td>
+  </tr>
+</table>
+
+<table>
+  <tr><th scope="col" colspan="2">Cloze</th></tr>
+  <tr><th scope="col">Front</th><th scope="col">Back</th></tr>
+  <tr>
+    <td><img src="doc/cloze-front.png" width="380"></td>
+    <td><img src="doc/cloze-back.png" width="380"></td>
+  </tr>
+</table>
+
+### Custom study
+
+The tags let you build [filtered decks](https://docs.ankiweb.net/filtered-decks.html) for exam
+prep:
+
+- `tag:formula` to drill the equations;
+- `tag:problem` for worked problems only;
+- `tag:AP_Physics_1::U5*` for everything in Unit 5;
+- `tag:diagram -tag:problem` for the conceptual cards with diagrams.
+
 ## Building it yourself
 
 Needs [uv](https://docs.astral.sh/uv/).
@@ -30,4 +67,12 @@ Cards live in `ap_physics_1/content/u1.py` … `u8.py`. Note GUIDs come from the
 card text, so re-importing after an edit updates unchanged cards but adds an edited card as a new
 note.
 
-Corrections are welcome: open an issue or a pull request.
+## Contributing
+
+Spotted a mistake? [Open an issue](https://github.com/jupsh/anki-ap-physics-1/issues). To change
+the deck yourself, see [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## License
+
+Public domain ([Unlicense](LICENSE.md)). AP is a registered trademark of the College Board, which
+was not involved in making this deck.

@@ -1,6 +1,6 @@
 [project]
 name = "anki-ap-physics-1"
-version = "1.0.0"
+version = "1.0"
 description = "Anki deck for AP Physics 1, generated from Python"
 requires-python = ">=3.12"
 dependencies = [
